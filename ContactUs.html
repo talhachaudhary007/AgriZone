@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- OWL CAROUSELL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION ANIMATE.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- TITLE  -->
+  <title>AGRIZONE</title>
+  <link rel="icon" type="image.png" href="logo.png">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navedit">
+      <div class="container-fluid">
+        <a href=""><img src="Images/mylogo.png" height="80" width="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="Images/toggle-button.png" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ShopNow.html">ShopNow</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="RentNow.html">Rent Now</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="Learn.html">Learn</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ContactUs.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="FAQ.html">FAQ's</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="AboutUs.html">AboutUs</a>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
+
+          <button id="signup-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign Up</button>
+            
+          <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="col-lg-12 Main_Headerbox">
+    <div class="col-lg-12 d-flex justify-content-center align-items-center"
+      style="background-color: #00000075 !important;height: 300px;flex-direction: column;">
+      <h1 class="text-light">AGRIZONE</h1>
+      <center>
+        <h6 class="text-light">Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
+      </center>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal For Location-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select your location</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary btn_Edit " id="getLocationBtn">
+              <i class="fa-solid fa-location-crosshairs"></i> Use Current Location
+            </button>
+          </div>
+
+          <form class="mt-3">
+            <div class="form-group">
+              <input type="text" class="form-control " id="city" placeholder="Enter city_ i.e Sahiwal">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="state" placeholder="Enter state_ i.e Punjab">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="zip" placeholder="Enter zip code_ i.e 57000">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" style="border-top: 0px;">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
+          <button type="button" class="btn btn-primary " style="border-radius: 25px;">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#getLocationBtn").click(function () {
+        // Check if geolocation is supported by the browser
+        if ("geolocation" in navigator) {
+          // Get user's current location
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            // Display user's location in an alert box
+            alert("Your current location is: " + lat + ", " + lon);
+          });
+        } else {
+          // Geolocation is not supported by the browser
+          alert("Geolocation is not supported by this browser.");
+        }
+      });
+    });
+  </script>
+
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h3 class="modal-title" id="signup-modal-label" > <img src="images/mylogo.png"
+              width="175px" height="68px" alt=""> </h3>
+              
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+          <center><h5>Create Your Account</h5></center>
+          <form id="signup-form" class="mt-4">
+            <div class="">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="text-danger"></div>
+          </form>
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+          <button type="submit" form="signup-form" class="btn btn-primary" style="border-radius: 25px;">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      // Show the modal when the Sign Up button is clicked
+      $('#signup-button').click(function () {
+        $('#signup-modal').modal('show');
+      });
+
+      // Validate the form when it's submitted
+      $('#signup-form').submit(function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Validate the username field
+        var username = $('#username').val();
+        if (username.length < 3) {
+          $('#error-message').text('Username must be at least 3 characters');
+          return;
+        }
+
+        // Validate the email field
+        var email = $('#email').val();
+        if (!isValidEmail(email)) {
+          $('#error-message').text('Please enter a valid email address');
+          return;
+        }
+
+        // Validate the password field
+        var password = $('#password').val();
+        if (password.length < 6) {
+          $('#error-message').text('Password must be at least 6 characters');
+          return;
+        }
+
+
+        // If all fields are valid, submit the form
+        $('#signup-form').submit();
+      });
+
+      // Function to check if an email is valid
+      function isValidEmail(email) {
+        // Regular expression for email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    });
+
+  </script>
+
+
+
+
+<!-- Signin Modal -->
+<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
+          width="163px" height="62px" alt=""> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="signin-form">
+          <div class="mb-2">
+            <label for="username" class="form-label">Username or Email:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-2">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div id="error-message" class="text-danger"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+  // Show the modal when the Sign In button is clicked
+  $('#signin-button').click(function() {
+    $('#signin-modal').modal('show');
+  });
+  
+  // Handle form submission
+  $('#signin-form').submit(function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get form data
+    var formData = {
+      'username': $('input[name=username]').val(),
+      'password': $('input[name=password]').val()
+    };
+    
+    // Send POST request to server to sign in
+    $.ajax({
+      type: 'POST',
+      url: '/signin',
+      data: formData,
+      dataType: 'json',
+      encode: true
+    })
+    .done(function(data) {
+      // Handle successful sign in
+      $('#signin-modal').modal('hide');
+      // Do something with response data, e.g. redirect to another page
+    })
+    .fail(function(data) {
+      // Handle sign in error
+      $('#error-message').text('Invalid username or password');
+    });
+  });
+});
+
+</script>
+
+
+
+
+        <section class="container">
+          <section class="mb-4">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                a matter of hours to help you.</p>
+          
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>SAHIWAL,PUNJAB,PAKISTAN</p>
+                    </li>
+          
+                    <li><i class="fas fa-phone mt-2 fa-2x"></i>
+                        <p class="mb-0">+ 01 234 567 89</p>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+          
+                    <li><i class="fas fa-envelope mt-2 fa-2x"></i>
+                        <p class="mb-0">arslan.farid79@gmail.com</p>
+                        <p>arslan.farid79@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+          
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          
+                        <div class="row">
+          
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                  <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                  <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                  <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+          
+                                <div class="md-form" >
+                                  <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    
+                                </div>
+          
+                            </div>
+                        </div>
+                    </form>
+          
+                    <div class="text-center text-md-left mt-3">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+            </div>
+          
+          </section>
+            </section>
+          
+          
+            <footer>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h5 class="pt-3">Papular Crops</h5>
+                        <ul class="cropes-section-edit">
+                          <li>Nutes</li>
+                          <li>Lugemes</li>
+                          <li>Oil Seeds</li>
+                          <li>Fiber Crops</li>
+                          <li>Tubers & Roots</li>
+                          <li>Spices & Herbs</li>
+                          <li>Forage & Fooders </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="pt-3">Modern Equips</h5>
+                        <ul class="cropes-section-edit">
+                          <li>Tractors</li>
+                          <li>Combines</li>
+                          <li>Seed Drills</li>
+                          <li>Plows</li>
+                          <li>Cultivators</li>
+                          <li>Mowers</li>
+                          <li>Grain Dryers</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="pt-3">Trending Searches</h5>
+                        <ul class="cropes-section-edit">
+                          <li>Crop Yield Optimization</li>
+                          <li>Agri Farming News</li>
+                          <li>Animal Husbandry</li>
+                          <li>Livestock Farming</li>
+                          <li>Teach & Innovation</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h5 class="pt-3">About Us</h5>
+                        <ul class="cropes-section-edit">
+                          <li>Our Team</li>
+                          <li>Experts</li>
+                          <li>Need Help</li>
+                          <li>Contect Ous</li>
+                          <li>For business</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-8">
+                        <h5 class="pt-3">FOLLOW US</h5>
+                        <ul class="cropes-section-edit" id="follow-section-edit">
+                          <li><i class="fa-brands fa-facebook"></i></li>
+                          <li><i class="fa-brands fa-twitter"></i></li>
+                          <li> <i class="fa-brands fa-youtube"></i></li>
+                          <li><i class="fa-brands fa-google-plus"></i></li>
+                        </ul>
+                        <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
+                      </div>
+          
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+  </body>
+  </html>
+
+
+  

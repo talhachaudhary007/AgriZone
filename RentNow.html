@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- OWL CAROUSELL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION ANIMATE.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- TITLE  -->
+  <title>AGRIZONE</title>
+  <link rel="icon" type="image.png" href="logo.png">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navedit " style="box-shadow: none; padding-bottom: 0px;">
+      <div class="container-fluid">
+        <a href=""><img src="Images/mylogo.png" height="80" width="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="Images/toggle-button.png" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ShopNow.html">ShopNow</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="RentNow.html">Rent Now</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="Learn.html">Learn</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ContactUs.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="FAQ.html">FAQ's</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="AboutUs.html">AboutUs</a>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
+            
+          <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
+
+          <button id="signin-button" class="btn btn-primary btn_Edit" data-bs-toggle="modal" data-bs-target="#sellProductModal" style="margin-left: 5px; font-weight: bold;">SELL <i class="fa-solid fa-arrow-up-from-bracket"></i></button> 
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section >
+    <div class="col-lg-12" >
+      <div class="" style="">
+        <center class="wrapper" >
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Fruits</button>
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Vegetables</button>
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Crops</button>
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Seeds</button>
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Fertilizers</button>
+        <button type="button" class="btn btn-success catg-btn-edit btn-sm" style="display: inline-block;">Pesticides</button>
+      </center>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="col-lg-12 Main_Headerbox">
+    <div class="col-lg-12 d-flex justify-content-center align-items-center"
+      style="background-color: #00000075 !important;height: 300px;flex-direction: column;">
+      <h1 class="text-light">AGRIZONE</h1>
+      <center>
+        <h6 class="text-light">Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
+      </center>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal For Location-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select your location</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary btn_Edit " id="getLocationBtn">
+              <i class="fa-solid fa-location-crosshairs"></i> Use Current Location
+            </button>
+          </div>
+
+          <form class="mt-3">
+            <div class="form-group">
+              <input type="text" class="form-control " id="city" placeholder="Enter city_ i.e Sahiwal">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="state" placeholder="Enter state_ i.e Punjab">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="zip" placeholder="Enter zip code_ i.e 57000">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" style="border-top: 0px;">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
+          <button type="button" class="btn btn-primary " style="border-radius: 25px;">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#getLocationBtn").click(function () {
+        // Check if geolocation is supported by the browser
+        if ("geolocation" in navigator) {
+          // Get user's current location
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            // Display user's location in an alert box
+            alert("Your current location is: " + lat + ", " + lon);
+          });
+        } else {
+          // Geolocation is not supported by the browser
+          alert("Geolocation is not supported by this browser.");
+        }
+      });
+    });
+  </script>
+
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h3 class="modal-title" id="signup-modal-label" > <img src="images/mylogo.png"
+              width="175px" height="68px" alt=""> </h3>
+              
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+          <center><h5>Create Your Account</h5></center>
+          <form id="signup-form" class="mt-4">
+            <div class="">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="text-danger"></div>
+          </form>
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+          <button type="submit" form="signup-form" class="btn btn-primary" style="border-radius: 25px;">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      // Show the modal when the Sign Up button is clicked
+      $('#signup-button').click(function () {
+        $('#signup-modal').modal('show');
+      });
+
+      // Validate the form when it's submitted
+      $('#signup-form').submit(function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Validate the username field
+        var username = $('#username').val();
+        if (username.length < 3) {
+          $('#error-message').text('Username must be at least 3 characters');
+          return;
+        }
+
+        // Validate the email field
+        var email = $('#email').val();
+        if (!isValidEmail(email)) {
+          $('#error-message').text('Please enter a valid email address');
+          return;
+        }
+
+        // Validate the password field
+        var password = $('#password').val();
+        if (password.length < 6) {
+          $('#error-message').text('Password must be at least 6 characters');
+          return;
+        }
+
+
+        // If all fields are valid, submit the form
+        $('#signup-form').submit();
+      });
+
+      // Function to check if an email is valid
+      function isValidEmail(email) {
+        // Regular expression for email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    });
+
+  </script>
+
+
+
+
+<!-- Signin Modal -->
+<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
+          width="163px" height="62px" alt=""> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="signin-form">
+          <div class="mb-2">
+            <label for="username" class="form-label">Username or Email:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-2">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div id="error-message" class="text-danger"></div>
+        </form>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
+
+      </div>
+
+
+      <div class="modal-footer">
+        <button id="signup-button"  data-bs-dismiss="modal" class="btn btn-primary " style="min-width: 100%;">Register Now</button>
+        <p>By continuing, you agree to <a href=""> Agrizone's </a> Conditions of Use and <a href=""> Privacy Notice</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+  // Show the modal when the Sign In button is clicked
+  $('#signin-button').click(function() {
+    $('#signin-modal').modal('show');
+  });
+  
+  // Handle form submission
+  $('#signin-form').submit(function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get form data
+    var formData = {
+      'username': $('input[name=username]').val(),
+      'password': $('input[name=password]').val()
+    };
+    
+    // Send POST request to server to sign in
+    $.ajax({
+      type: 'POST',
+      url: '/signin',
+      data: formData,
+      dataType: 'json',
+      encode: true
+    })
+    .done(function(data) {
+      // Handle successful sign in
+      $('#signin-modal').modal('hide');
+      // Do something with response data, e.g. redirect to another page
+    })
+    .fail(function(data) {
+      // Handle sign in error
+      $('#error-message').text('Invalid username or password');
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- SELLING MODAL  -->
+
+<div class="modal fade" id="sellProductModal" tabindex="-1" role="dialog" aria-labelledby="sellProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sellProductModalLabel">Sell Product</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="sellProductForm">
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="productName" required>
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Product Description</label>
+            <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="productImages">Product Images</label>
+            <input type="file" class="form-control-file" id="productImages" name="productImages[]" accept="image/*" multiple required>
+          </div>
+        </form>
+        <div id="productImagesPreview" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner"></div>
+          <a class="carousel-control-prev" href="#productImagesPreview" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#productImagesPreview" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+        </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" form="sellProductForm">Sell</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+  // Add validation rules to form
+  $('#sellProductForm').validate({
+
+    rules: {
+      productName: 'required',
+      productDescription: 'required',
+      'productImages[]': {
+        required: true,
+        accept: 'image/*'
+      }
+    },
+    messages: {
+      productName: 'Please enter a product name',
+      productDescription: 'Please enter a product description',
+      'productImages[]': {
+        required: 'Please upload at least one image',
+        accept: 'Please upload a valid image file (JPG, PNG, GIF, etc.)'
+      }
+    },
+    errorElement: 'div',
+    errorPlacement: function(error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.form-group').append(error);
+    },
+    highlight: function(element, errorClass, validClass) {
+      $(element).addClass('is-invalid').removeClass('is-valid');
+    },
+    unhighlight: function(element, errorClass, validClass) {
+      $(element).addClass('is-valid').removeClass('is-invalid');
+    }
+  });
+
+  // Clear form when modal is hidden
+  $('#sellProductModal').on('hidden.bs.modal', function() {
+    $('#sellProductForm')[0].reset();
+    $('#sellProductForm').validate().resetForm();
+    $('#sellProductForm .form-control').removeClass('is-valid is-invalid');
+  });
+});
+
+</script>
+
+
+
+
+
+
+  <!-- MY SEARCH BAR -->
+  <section>
+    <div class="col-lg-12 animate__animated animate__fadeIn" style="  position: relative;">
+      <div class="col-lg-7 col-md-7 col-sm-10 col-10 search" style="box-shadow: 0px 0px 7px -1px black;">
+        <div class="form">
+          <button class="btn btn-success  serach-btn-edit" type="button" style="    margin-right: 15px; left: 0px;">
+            Search Agri Product
+          </button>
+          <input type="text" class="form-control form-input form-input-edit" placeholder="Search anything...">
+          <a href="#"><i class="fa fa-search"></i></a>
+
+          <a href="#" id="filter-btn"> <img src="Images/sort.png" alt="" class="filter-edit"> </a>
+
+          <script>
+            $(document).ready(function () {
+              $('#my-filter').hide();
+
+              $('#filter-btn').click(function () {
+                $('#my-filter').toggle();
+              });
+
+            }); 
+          </script>
+        </div>
+
+        <!-- MY SEARCH FILTER  -->
+        <div class="row" style="margin-top: 20px; " id="my-filter">
+          <div class="col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center">
+
+            <select name="" id="">
+              <option value="" disabled selected style="display: none;">Select City </option>
+              <option value="">Sahiwal </option>
+              <option value="">Lahore</option>
+              <option value="">Pakaptan</option>
+              <option value="">Okara</option>
+              <option value="">Islamabad</option>
+              <option value="">Mia Channu</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center">
+
+            <select name="" id="">
+              <option value="" disabled selected style="display: none;"> Select Product </option>
+              <option value="">Seeds </option>
+              <option value="">Pesticides</option>
+              <option value="">Fertilizers</option>
+              <option value="">Fruits</option>
+              <option value="">Vegetables</option>
+              <option value="">Crops</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 d-flex justify-content-center align-items-center">
+
+            <select name="" id="">
+              <option value="" disabled selected style="display: none;"> Choose Preference</option>
+              <option value=""> On Rent</option>
+              </option>
+              <option value="">BUY</option>
+            </select>
+          </div>
+          <div>
+            
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+        
+        <p>&nbsp;</p>
+        <br>
+<p>&nbsp;</p>
+        <section>
+          <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+                      <div class="card">
+                          <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+                          <div class="card-body" style="display: flex;flex-direction: column;">
+  
+                              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                                  card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                                  vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                                  quo inventore. Porro aut atque veritatis. content.</p>
+                              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+                              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+                    <div class="card">
+                        <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="display: flex;flex-direction: column;">
+
+                            <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                                quo inventore. Porro aut atque veritatis. content.</p>
+                            <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+                            <a href="#" class="" style="">1_8, islamabad . days ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+                  <div class="card">
+                      <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" style="display: flex;flex-direction: column;">
+
+                          <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                              card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                              vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                              quo inventore. Porro aut atque veritatis. content.</p>
+                          <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+                          <a href="#" class="" style="">1_8, islamabad . days ago</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+                <div class="card">
+                    <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="display: flex;flex-direction: column;">
+
+                        <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                            card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                            vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                            quo inventore. Porro aut atque veritatis. content.</p>
+                        <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+                        <a href="#" class="" style="">1_8, islamabad . days ago</a>
+                    </div>
+                </div>
+            </div>
+
+              </div>
+          </div>
+      </section>
+  
+
+
+<p>&nbsp;</p>
+
+
+      <footer>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                  <h5 class="pt-3">Papular Crops</h5>
+                  <ul class="cropes-section-edit">
+                    <li>Nutes</li>
+                    <li>Lugemes</li>
+                    <li>Oil Seeds</li>
+                    <li>Fiber Crops</li>
+                    <li>Tubers & Roots</li>
+                    <li>Spices & Herbs</li>
+                    <li>Forage & Fooders </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                  <h5 class="pt-3">Modern Equips</h5>
+                  <ul class="cropes-section-edit">
+                    <li>Tractors</li>
+                    <li>Combines</li>
+                    <li>Seed Drills</li>
+                    <li>Plows</li>
+                    <li>Cultivators</li>
+                    <li>Mowers</li>
+                    <li>Grain Dryers</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                  <h5 class="pt-3">Trending Searches</h5>
+                  <ul class="cropes-section-edit">
+                    <li>Crop Yield Optimization</li>
+                    <li>Agri Farming News</li>
+                    <li>Animal Husbandry</li>
+                    <li>Livestock Farming</li>
+                    <li>Teach & Innovation</li>
+                  </ul>
+                </div>
+              
+            
+         
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                  <h5 class="pt-3">About Us</h5>
+                  <ul class="cropes-section-edit">
+                    <li>Our Team</li>
+                    <li>Experts</li>
+                    <li>Need Help</li>
+                    <li>Contect Ous</li>
+                    <li>For business</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                  <h5 class="pt-3">FOLLOW US</h5>
+                  <ul class="cropes-section-edit" id="follow-section-edit">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li> <i class="fa-brands fa-youtube"></i></li>
+                    <li><i class="fa-brands fa-google-plus"></i></li>
+                  </ul>
+                  <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
+                </div>
+                <hr>
+                <div >
+                  <p style="text-align: center;">@2023 Copyright: AGRIZONE.COM</p>
+                </div>
+    
+              </div>
+            
+          </div>
+        </div>
+      </footer>
+
+  </body>
+  </html>
+
+
+  

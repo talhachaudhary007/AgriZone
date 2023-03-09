@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- OWL CAROUSELL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION ANIMATE.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- TITLE  -->
+  <title>AGRIZONE</title>
+  <link rel="icon" type="image.png" href="logo.png">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navedit">
+      <div class="container-fluid">
+        <a href=""><img src="Images/mylogo.png" height="80" width="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="Images/toggle-button.png" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ShopNow.html">ShopNow</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="RentNow.html">Rent Now</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="Learn.html">Learn</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ContactUs.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="FAQ.html">FAQ's</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="AboutUs.html">AboutUs</a>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
+
+          <button id="signup-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign Up</button>
+            
+          <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="col-lg-12 Main_Headerbox">
+    <div class="col-lg-12 d-flex justify-content-center align-items-center"
+      style="background-color: #00000075 !important;height: 300px;flex-direction: column;">
+      <h1 class="text-light">AGRIZONE</h1>
+      <center>
+        <h6 class="text-light">Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
+      </center>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal For Location-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select your location</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary btn_Edit " id="getLocationBtn">
+              <i class="fa-solid fa-location-crosshairs"></i> Use Current Location
+            </button>
+          </div>
+
+          <form class="mt-3">
+            <div class="form-group">
+              <input type="text" class="form-control " id="city" placeholder="Enter city_ i.e Sahiwal">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="state" placeholder="Enter state_ i.e Punjab">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="zip" placeholder="Enter zip code_ i.e 57000">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" style="border-top: 0px;">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
+          <button type="button" class="btn btn-primary " style="border-radius: 25px;">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#getLocationBtn").click(function () {
+        // Check if geolocation is supported by the browser
+        if ("geolocation" in navigator) {
+          // Get user's current location
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            // Display user's location in an alert box
+            alert("Your current location is: " + lat + ", " + lon);
+          });
+        } else {
+          // Geolocation is not supported by the browser
+          alert("Geolocation is not supported by this browser.");
+        }
+      });
+    });
+  </script>
+
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h3 class="modal-title" id="signup-modal-label" > <img src="images/mylogo.png"
+              width="175px" height="68px" alt=""> </h3>
+              
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+          <center><h5>Create Your Account</h5></center>
+          <form id="signup-form" class="mt-4">
+            <div class="">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="text-danger"></div>
+          </form>
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+          <button type="submit" form="signup-form" class="btn btn-primary" style="border-radius: 25px;">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      // Show the modal when the Sign Up button is clicked
+      $('#signup-button').click(function () {
+        $('#signup-modal').modal('show');
+      });
+
+      // Validate the form when it's submitted
+      $('#signup-form').submit(function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Validate the username field
+        var username = $('#username').val();
+        if (username.length < 3) {
+          $('#error-message').text('Username must be at least 3 characters');
+          return;
+        }
+
+        // Validate the email field
+        var email = $('#email').val();
+        if (!isValidEmail(email)) {
+          $('#error-message').text('Please enter a valid email address');
+          return;
+        }
+
+        // Validate the password field
+        var password = $('#password').val();
+        if (password.length < 6) {
+          $('#error-message').text('Password must be at least 6 characters');
+          return;
+        }
+
+
+        // If all fields are valid, submit the form
+        $('#signup-form').submit();
+      });
+
+      // Function to check if an email is valid
+      function isValidEmail(email) {
+        // Regular expression for email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    });
+
+  </script>
+
+
+
+
+<!-- Signin Modal -->
+<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
+          width="163px" height="62px" alt=""> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="signin-form">
+          <div class="mb-2">
+            <label for="username" class="form-label">Username or Email:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-2">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div id="error-message" class="text-danger"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+  // Show the modal when the Sign In button is clicked
+  $('#signin-button').click(function() {
+    $('#signin-modal').modal('show');
+  });
+  
+  // Handle form submission
+  $('#signin-form').submit(function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get form data
+    var formData = {
+      'username': $('input[name=username]').val(),
+      'password': $('input[name=password]').val()
+    };
+    
+    // Send POST request to server to sign in
+    $.ajax({
+      type: 'POST',
+      url: '/signin',
+      data: formData,
+      dataType: 'json',
+      encode: true
+    })
+    .done(function(data) {
+      // Handle successful sign in
+      $('#signin-modal').modal('hide');
+      // Do something with response data, e.g. redirect to another page
+    })
+    .fail(function(data) {
+      // Handle sign in error
+      $('#error-message').text('Invalid username or password');
+    });
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+  <section class="main-content">
+      <div class="container">
+          <div class="faq-heading py-1">
+          <h2 class="text-center text-uppercase ">Frequently Asked Questions</h2>
+          </div>
+          <br>
+          <br>
+          <div class="row justify-content-center align-items-center">
+              <div class="col-sm-10 ">
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                                  <span>How to Create FAQ Section</span>
+                              </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show"
+                              aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body"> <strong>This is the first item's accordion
+                                      body.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                  consequat. </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                                  <span>What jQuery do I need?</span>
+                              </button>
+                              </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body"> <strong>This is the second item's accordion
+                                      body.</strong> Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                  ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                  nesciunt. </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                                  <span>What jQuery do I need?</span>
+                              </button>
+                              </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body"> <strong>This is the second item's accordion
+                                      body.</strong> Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                  ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                  nesciunt. </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                                  <span>What jQuery do I need?</span>
+                              </button>
+                              </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body"> <strong>This is the second item's accordion
+                                      body.</strong> Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                  ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                  nesciunt. </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFive" aria-expanded="false"
+                                  aria-controls="collapseFive">
+                                  <div class="circle-icon"> <i class="fa fa-question"></i> </div>
+                                  <span>HTML CSS FAQ Design With jQuery Accordion</span>
+                              </button>
+                              </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse"
+                              aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body"> <strong>This is the third item's accordion
+                                      body.</strong> At vero eos et accusamus et iusto odio dignissimos ducimus
+                                  qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
+                                  quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                  in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+                                  harum quidem rerum facilis </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+      
+      
+      
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Papular Crops</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Nutes</li>
+                      <li>Lugemes</li>
+                      <li>Oil Seeds</li>
+                      <li>Fiber Crops</li>
+                      <li>Tubers & Roots</li>
+                      <li>Spices & Herbs</li>
+                      <li>Forage & Fooders </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Modern Equips</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Tractors</li>
+                      <li>Combines</li>
+                      <li>Seed Drills</li>
+                      <li>Plows</li>
+                      <li>Cultivators</li>
+                      <li>Mowers</li>
+                      <li>Grain Dryers</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Trending Searches</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Crop Yield Optimization</li>
+                      <li>Agri Farming News</li>
+                      <li>Animal Husbandry</li>
+                      <li>Livestock Farming</li>
+                      <li>Teach & Innovation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5 class="pt-3">About Us</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Our Team</li>
+                      <li>Experts</li>
+                      <li>Need Help</li>
+                      <li>Contect Ous</li>
+                      <li>For business</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <h5 class="pt-3">FOLLOW US</h5>
+                    <ul class="cropes-section-edit" id="follow-section-edit">
+                      <li><i class="fa-brands fa-facebook"></i></li>
+                      <li><i class="fa-brands fa-twitter"></i></li>
+                      <li> <i class="fa-brands fa-youtube"></i></li>
+                      <li><i class="fa-brands fa-google-plus"></i></li>
+                    </ul>
+                    <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
+                  </div>
+      
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+    <script src="script.js"></script>
+
+  </body>
+  </html>
+
+
+  

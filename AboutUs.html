@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- OWL CAROUSELL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION ANIMATE.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- TITLE  -->
+  <title>AGRIZONE</title>
+  <link rel="icon" type="image.png" href="logo.png">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navedit">
+      <div class="container-fluid">
+        <a href=""><img src="Images/mylogo.png" height="80" width="200" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="Images/toggle-button.png" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ShopNow.html">ShopNow</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="RentNow.html">Rent Now</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="Learn.html">Learn</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="ContactUs.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="FAQ.html">FAQ's</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav_a_edit" href="AboutUs.html">AboutUs</a>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
+
+          <button id="signup-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign Up</button>
+            
+          <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="col-lg-12 Main_Headerbox">
+    <div class="col-lg-12 d-flex justify-content-center align-items-center"
+      style="background-color: #00000075 !important;height: 300px;flex-direction: column;">
+      <h1 class="text-light">AGRIZONE</h1>
+      <center>
+        <h6 class="text-light">Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
+      </center>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal For Location-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select your location</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary btn_Edit " id="getLocationBtn">
+              <i class="fa-solid fa-location-crosshairs"></i> Use Current Location
+            </button>
+          </div>
+
+          <form class="mt-3">
+            <div class="form-group">
+              <input type="text" class="form-control " id="city" placeholder="Enter city_ i.e Sahiwal">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="state" placeholder="Enter state_ i.e Punjab">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control mt-4" id="zip" placeholder="Enter zip code_ i.e 57000">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" style="border-top: 0px;">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
+          <button type="button" class="btn btn-primary " style="border-radius: 25px;">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#getLocationBtn").click(function () {
+        // Check if geolocation is supported by the browser
+        if ("geolocation" in navigator) {
+          // Get user's current location
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            // Display user's location in an alert box
+            alert("Your current location is: " + lat + ", " + lon);
+          });
+        } else {
+          // Geolocation is not supported by the browser
+          alert("Geolocation is not supported by this browser.");
+        }
+      });
+    });
+  </script>
+
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h3 class="modal-title" id="signup-modal-label" > <img src="images/mylogo.png"
+              width="175px" height="68px" alt=""> </h3>
+              
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+          <center><h5>Create Your Account</h5></center>
+          <form id="signup-form" class="mt-4">
+            <div class="">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="text-danger"></div>
+          </form>
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+          <button type="submit" form="signup-form" class="btn btn-primary" style="border-radius: 25px;">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      // Show the modal when the Sign Up button is clicked
+      $('#signup-button').click(function () {
+        $('#signup-modal').modal('show');
+      });
+
+      // Validate the form when it's submitted
+      $('#signup-form').submit(function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Validate the username field
+        var username = $('#username').val();
+        if (username.length < 3) {
+          $('#error-message').text('Username must be at least 3 characters');
+          return;
+        }
+
+        // Validate the email field
+        var email = $('#email').val();
+        if (!isValidEmail(email)) {
+          $('#error-message').text('Please enter a valid email address');
+          return;
+        }
+
+        // Validate the password field
+        var password = $('#password').val();
+        if (password.length < 6) {
+          $('#error-message').text('Password must be at least 6 characters');
+          return;
+        }
+
+
+        // If all fields are valid, submit the form
+        $('#signup-form').submit();
+      });
+
+      // Function to check if an email is valid
+      function isValidEmail(email) {
+        // Regular expression for email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    });
+
+  </script>
+
+
+
+
+<!-- Signin Modal -->
+<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
+          width="163px" height="62px" alt=""> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="signin-form">
+          <div class="mb-2">
+            <label for="username" class="form-label">Username or Email:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-2">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div id="error-message" class="text-danger"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+  // Show the modal when the Sign In button is clicked
+  $('#signin-button').click(function() {
+    $('#signin-modal').modal('show');
+  });
+  
+  // Handle form submission
+  $('#signin-form').submit(function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get form data
+    var formData = {
+      'username': $('input[name=username]').val(),
+      'password': $('input[name=password]').val()
+    };
+    
+    // Send POST request to server to sign in
+    $.ajax({
+      type: 'POST',
+      url: '/signin',
+      data: formData,
+      dataType: 'json',
+      encode: true
+    })
+    .done(function(data) {
+      // Handle successful sign in
+      $('#signin-modal').modal('hide');
+      // Do something with response data, e.g. redirect to another page
+    })
+    .fail(function(data) {
+      // Handle sign in error
+      $('#error-message').text('Invalid username or password');
+    });
+  });
+});
+
+</script>
+
+
+
+
+        <section>
+          <div class="container py-5">
+            <div class="row">
+      
+              <div class="col-lg-7">
+      
+                <h5 style="color:#888484;">Know About</h5>
+                <h2>OUR PUSPOSE</h2>
+                <p>
+                  Purpose of this is intending to reduce the gap in the Agri value chain by connecting farmers with
+                  local market dealers (i.e., for modern tech & equipment’s) and end consumers (i.e., direct home
+                  customers), making sure that farmers get a fair price and our customers, top quality produce.
+                  Normally 80% of the farmers are those who actually not aware to advance technology and can't
+                  afford modern equipment’s, here we give platform where they took on rent easily. Initially we
+                  start it with online website and helpline for all order placements. We'll maintain a standard for
+                  delivery of fresh fruits and vegetables, straight from the farm, to your doorstep and secondly for
+                  the ease of farmer so they can sell their crops and also buy seed, fertilizers, pesticides and use
+                  modern technology equipment’s. Our focus is on catering to the comfort and ease of our
+                  customers and ensuring they enjoy crops, fresh fruits and vegetables. Our team is passionate and
+                  committed to our cause, that we can help farmers, and at the same time bring their farm-fresh
+                  goodness and crops to our customer's home.
+                </p>
+              </div>
+              <div class="col-lg-5 mission-image-edit">
+                <img src="Images/mission img.jpg" height="100%" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section>
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-5 mission-image-edit">
+                <img src="Images/mission img.jpg" height="100%" width="100%" alt="">
+              </div>
+              <div class="col-lg-7">
+      
+                <h5 style="color:#888484;">By This You Can</h5>
+                <h2>BUILD AGRI CHAIN</h2>
+                <p>
+                  Living in developing countries, where a large percentage of our labor force works in the agriculture 
+      sector, we believe it is our job to contribute to the community by making farming a profitable 
+      business. The system allows farmers to sell their stock directly as a direct supplier throughout the 
+      country without any middlemen so that, farmer earns optimum rates for his stock and also the 
+      customer gets it at lowered costs. We play a role in the Agri value chain by connecting farmers to 
+      end-users and giving them a fair price for their produce in return. We buy products directly from 
+      the farmers and deliver to our customers. We believe it is our job to inform and promote the 
+      importance of consuming healthy and fresh produce and make it easily accessible to our customers. 
+      Enabling our customers to consume fresh fruits and vegetables that too at reasonable rates, without 
+      even having to step out of their house. The comfort, convenience and health of our customers is 
+      our top priority and we promise to always provide them with fresh, top-quality products while at 
+      the same time making a difference in the agriculture community of Pakistan.
+                </p>
+              </div>
+      
+            </div>
+          </div>
+        </section>
+      
+        <section id="jumbotron">
+          <div class="container py-5">
+          <div class="row mx-0">
+            <div class="col-md-6 py-3 col-lg-3">
+              <div class="row">
+                <div class="col-3 col-md-4">
+              <div class="jumbo-icon d-flex justify-content-center align-items-center">
+                <i class="fa fa-coins"></i>
+              </div></div>
+              <div class="col-9 col-md-8">
+              <div class="jumbo-title pl-4">
+              <h3 >230</h3>
+              <h5>Project Done</h5>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 py-3 col-lg-3 col-sm-6">
+            <div class="row">
+              <div class="col-3 col-md-4">
+            <div class="jumbo-icon d-flex justify-content-center align-items-center">
+              <i class="fa fa-face-smile"></i>
+            </div></div>
+            <div class="col-9 col-md-8">
+            <div class="jumbo-title pl-4">
+            <h3 >230</h3>
+            <h5>Project Done</h5>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+        <div class="col-md-6 py-3 col-lg-3">
+          <div class="row">
+            <div class="col-3 col-md-4">
+          <div class="jumbo-icon d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div></div>
+          <div class="col-9 col-md-8">
+            <div class="jumbo-title">
+            <h3 >230</h3>
+            <h5>Project Done</h5>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-md-6 py-3 col-lg-3">
+          <div class="row">
+            <div class="col-3 col-md-4">
+          <div class="jumbo-icon d-flex justify-content-center align-items-center">
+           
+            <i class="fa-solid fa-trophy"></i>
+          </div></div>
+          <div class="col-9 col-md-8">
+          <div class="jumbo-title pl-4">
+          <h3 >230</h3>
+          <h5>Project Done</h5>
+          </div>
+        </div>
+        </div>
+        
+        </div>
+          </div>
+        </div>
+        </section>
+        
+      
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-column py-5">
+              <h5 style="color:#888484;">Best Reason</h5>
+              <h2>Why Choose Us</h2>
+      
+            </div>
+            <div class="col-md-7">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <h5 style="color:#888484;">Get More Profit</h5>
+              <div class="progress my-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-succes" style="width: 100%"></div>
+              </div>
+              <h5 style="color:#888484;">Boost Agriculture</h5>
+              <div class="progress  my-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-succes" style="width: 100%"></div>
+              </div>
+              <h5 style="color:#888484;">Worldwide Agri Chain</h5>
+              <div class="progress  my-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-succes" style="width: 100%"></div>
+              </div>
+              <h5 style="color:#888484;">Meet Internationals</h5>
+              <div class="progress  my-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-succes" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Papular Crops</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Nutes</li>
+                      <li>Lugemes</li>
+                      <li>Oil Seeds</li>
+                      <li>Fiber Crops</li>
+                      <li>Tubers & Roots</li>
+                      <li>Spices & Herbs</li>
+                      <li>Forage & Fooders </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Modern Equips</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Tractors</li>
+                      <li>Combines</li>
+                      <li>Seed Drills</li>
+                      <li>Plows</li>
+                      <li>Cultivators</li>
+                      <li>Mowers</li>
+                      <li>Grain Dryers</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="pt-3">Trending Searches</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Crop Yield Optimization</li>
+                      <li>Agri Farming News</li>
+                      <li>Animal Husbandry</li>
+                      <li>Livestock Farming</li>
+                      <li>Teach & Innovation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5 class="pt-3">About Us</h5>
+                    <ul class="cropes-section-edit">
+                      <li>Our Team</li>
+                      <li>Experts</li>
+                      <li>Need Help</li>
+                      <li>Contect Ous</li>
+                      <li>For business</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-8">
+                    <h5 class="pt-3">FOLLOW US</h5>
+                    <ul class="cropes-section-edit" id="follow-section-edit">
+                      <li><i class="fa-brands fa-facebook"></i></li>
+                      <li><i class="fa-brands fa-twitter"></i></li>
+                      <li> <i class="fa-brands fa-youtube"></i></li>
+                      <li><i class="fa-brands fa-google-plus"></i></li>
+                    </ul>
+                    <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
+                  </div>
+      
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+    <script src="script.js"></script>
+
+  </body>
+  </html>
+
+
+  
