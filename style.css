@@ -296,6 +296,16 @@ footer {
   display: block;
 }
 
+@media screen and (min-width: 1025px){
+  .nav_collap{
+    display: none !important;
+  }
+
+}
+
+
+
+
 .slider-text{
   position: absolute;
   margin-top: 9rem;
@@ -305,35 +315,33 @@ footer {
 }
 
 
+/* HOMEPAGE SLIDER QUIRIES  */
 
-@media screen and (min-width: 1025px){
-  .nav_collap{
-    display: none !important;
-  }
-
-}
 @media screen and (max-width: 768px){
   .slider-text{
-    margin-top: 2rem !important;
+    margin-top: 7rem !important;
 
   }
   .search-edit{
     margin-top: 0rem !important;
   } 
 }
-@media screen and (min-width: 767px){
+
+@media screen and (min-width: 1024px){ 
+
   .slider-text{
-    margin-top: 5rem !important;
+    margin-top: 8rem !important;
 
   }
-  .search-edit{
-    margin-top: -4rem !important;
-  } 
 }
 @media screen and (min-width: 1440px){
   .search-edit{
     margin-top: -12rem !important;
   } 
+  .slider-text{
+    margin-top: 9rem !important;
+
+  }
 
 }
 @media screen and (min-width: 2560px){
@@ -341,7 +349,7 @@ footer {
     margin-top: -22rem !important;
   } 
   .slider-text{
-    margin-top: 23rem !important;
+    margin-top: 22rem !important;
 
   }
 }
