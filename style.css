@@ -69,10 +69,10 @@ html{
     height:300px;
     border:1px solid black;
     background-image: url(Images/Bg1.jpg);
-
     background-position: center;
     padding: 0% !important;
 }
+
 .search{
     margin: auto !important;
     background-color: white;
@@ -295,11 +295,57 @@ footer {
 .nav_collap{
   display: block;
 }
+
+.slider-text{
+  position: absolute;
+  margin-top: 9rem;
+  left: 0px; 
+  right: 0px; 
+  text-align: center;
+}
+
+
+
 @media screen and (min-width: 1025px){
   .nav_collap{
     display: none !important;
   }
+
 }
+@media screen and (max-width: 768px){
+  .slider-text{
+    margin-top: 2rem !important;
+
+  }
+  .search-edit{
+    margin-top: 0rem !important;
+  } 
+}
+@media screen and (min-width: 767px){
+  .slider-text{
+    margin-top: 5rem !important;
+
+  }
+  .search-edit{
+    margin-top: -4rem !important;
+  } 
+}
+@media screen and (min-width: 1440px){
+  .search-edit{
+    margin-top: -12rem !important;
+  } 
+
+}
+@media screen and (min-width: 2560px){
+  .search-edit{
+    margin-top: -22rem !important;
+  } 
+  .slider-text{
+    margin-top: 23rem !important;
+
+  }
+}
+ 
 
 
 
