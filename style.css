@@ -129,7 +129,7 @@ select{
 .form-input-edit{
 
     height:50px;
-    text-indent: 11rem;
+    text-indent: 9rem;
     border-radius: 2px;
     outline: none;
 }
@@ -198,7 +198,11 @@ select{
   margin-top: 0;
 }
 #jumbotron{
-  background-color: #60941a;
+  /* background-color: #60941a; */
+  background-color: #4158D0;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(135deg, #6b86d7 0%, #587bfc 50%, #FF0000 100%);
+    
   color: white;
   padding: 40px 0;
 }
@@ -231,14 +235,16 @@ select{
 }
 
 .circle-icon {
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 	border-radius: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #60941a;
-    border: 5px solid rgba(0, 0, 0, 0.555);
+	/* background: #60941a; */
+  /* background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); */
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    border: 2px solid rgba(0, 0, 0, 0.555);
 	color: #fff;
 	margin-left: -20px;
 	margin-right: 10px;
@@ -355,7 +361,20 @@ footer {
 }
  
 
+@media screen and (max-width: 450px){
 
+  .serach-rsp{
+    text-indent: 122px;
+  }
+  .slider-text {
+    margin-top: 1rem !important;
+}
+.slider-text h6{
+  font-size: 12px;
+}
+
+  
+}
 
 
 
