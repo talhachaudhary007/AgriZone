@@ -89,9 +89,10 @@
           <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
           style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
             
-          <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
+          <button id="signin-button" class="btn btn-primary btn_Edit" data-bs-toggle="modal" data-bs-target="#signin" style="margin-left: 5px;">Sign In</button>
 
-          <button id="signin-button" class="btn btn-primary btn_Edit" data-bs-toggle="modal" data-bs-target="#sellProductModal" style="margin-left: 5px; font-weight: bold;">SELL <i class="fa-solid fa-arrow-up-from-bracket"></i></button> 
+
+          <button id="" class="btn btn-primary btn_Edit" data-bs-toggle="modal" data-bs-target="#sellProductModal" style="margin-left: 5px; font-weight: bold;">SELL <i class="fa-solid fa-arrow-up-from-bracket"></i></button> 
 
         </div>
       </div>
@@ -113,8 +114,8 @@
   <div class="col-12">
     <div style="position: relative;">
       <div class="slider-text"> 
-        <h1 class="text-light animate__animated animate__fadeInLeft"> AGRIZONE </h1>
-        <h6 class="text-light my-3 animate__animated animate__fadeInRight">Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
+        <h1 class="text-light" data-aos="fade-right" data-aos-duration="3000" style="letter-spacing: 2px; text-shadow: 2px 2px black"> AGRIZONE </h1>
+        <h6 style="letter-spacing: 2px; text-shadow: 2px 2px black;" class="text-light my-3" data-aos="fade-right" data-aos-duration="3000" >Growing the future with Agrizone - Your ultimate agribusiness destination</h6>
       </div>
        <video autoplay loop src="myvideo2.mp4" style=" width: 100%;"></video> 
     </div>
@@ -274,81 +275,61 @@
 
 
 
-<!-- Signin Modal -->
-<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
-          width="163px" height="62px" alt=""> </h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="signin-form">
-          <div class="mb-2">
-            <label for="username" class="form-label">Username or Email:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-          </div>
-          <div class="mb-2">
-            <label for="password" class="form-label">Password:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          </div>
-          <div id="error-message" class="text-danger"></div>
-        </form>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
-        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
-
-      </div>
 
 
-      <div class="modal-footer">
-        <button id="signup-button"  data-bs-dismiss="modal" class="btn btn-primary " style="min-width: 100%;">Register Now</button>
-        <p>By continuing, you agree to <a href=""> Agrizone's </a> Conditions of Use and <a href=""> Privacy Notice</a>.</p>
-      </div>
+ <!-- Button trigger modal -->
+ <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Log in
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-dialog-edit">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="Images/mylogo.png" width="50%" height="50%" he alt="">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h2 style="text-align: center;font-size: 1.6rem;padding-bottom: 15px;">WELLCOME</h2>
+                <!-- <h6>The Trusted Community Of <br> Buyers And Sellers.</h6> -->
+                <div class="login-field">
+                    <ul>
+                        <a href="">
+                            <li id="li-1">
+                                <div class="login-field-icon"><img src="Icons/google.png" alt=""></div>
+                                <b>Continue With Google</b>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li  id="li-2">
+                                <div class="login-field-icon"><img src="Icons/facebook (1).png" alt=""></div>
+                                <b>Continue With Facebook</b>
+                            </li>
+                        </a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#signup-modal" data-bs-dismiss="modal">
+                            <li id="li-3">
+                                <div class="login-field-icon"><img src="Icons/email (2).png" alt=""></div>
+                                <b>Continue With Email</b>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li id="li-4">
+                                <div class="login-field-icon"><img src="Icons/phone-receiver-silhouette.png" alt=""></div>
+                                <b>Continue With Phone</b>
+                            </li>
+                            
+                        </a>
+                    </ul>
+                </div>
+                <div class="privecy-edit">
+                    <p>By continuing, you are accepting <br>
+                        <a href=""> Agrizone Terms of use and Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
-<script>
-  $(document).ready(function() {
-  // Show the modal when the Sign In button is clicked
-  $('#signin-button').click(function() {
-    $('#signin-modal').modal('show');
-  });
-  
-  // Handle form submission
-  $('#signin-form').submit(function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-    
-    // Get form data
-    var formData = {
-      'username': $('input[name=username]').val(),
-      'password': $('input[name=password]').val()
-    };
-    
-    // Send POST request to server to sign in
-    $.ajax({
-      type: 'POST',
-      url: '/signin',
-      data: formData,
-      dataType: 'json',
-      encode: true
-    })
-    .done(function(data) {
-      // Handle successful sign in
-      $('#signin-modal').modal('hide');
-      // Do something with response data, e.g. redirect to another page
-    })
-    .fail(function(data) {
-      // Handle sign in error
-      $('#error-message').text('Invalid username or password');
-    });
-  });
-});
-
-</script>
-
-
 
 
 <!-- SELLING MODAL  -->
