@@ -77,18 +77,20 @@
           </ul>
 
           <button class="btn btn-success btn_Edit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
-            
+            style="margin-left: 5px;"><i class="fa-solid fa-location-dot"></i></button>
+
           <button id="signin-button" class="btn btn-primary btn_Edit" style="margin-left: 5px;">Sign In</button>
 
-          <button id="signin-button" class="btn btn-primary btn_Edit" data-bs-toggle="modal" data-bs-target="#sellProductModal" style="margin-left: 5px; font-weight: bold;">SELL <i class="fa-solid fa-arrow-up-from-bracket"></i></button> 
+          <button id="signin-button" class="btn btn-primary btn_Edit" data-bs-toggle="modal"
+            data-bs-target="#sellProductModal" style="margin-left: 5px; font-weight: bold;">SELL <i
+              class="fa-solid fa-arrow-up-from-bracket"></i></button>
 
         </div>
       </div>
     </nav>
   </header>
 
-  <section >
+  <!-- <section >
     <div class="col-lg-12" >
       <div class="" style="">
         <center class="wrapper" >
@@ -101,7 +103,7 @@
       </center>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <div class="col-lg-12 Main_Headerbox">
@@ -182,14 +184,16 @@
   <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" >
-          <h3 class="modal-title" id="signup-modal-label" > <img src="images/mylogo.png"
-              width="175px" height="68px" alt=""> </h3>
-              
+        <div class="modal-header">
+          <h3 class="modal-title" id="signup-modal-label"> <img src="images/mylogo.png" width="175px" height="68px"
+              alt=""> </h3>
+
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body" >
-          <center><h5>Create Your Account</h5></center>
+        <div class="modal-body">
+          <center>
+            <h5>Create Your Account</h5>
+          </center>
           <form id="signup-form" class="mt-4">
             <div class="">
               <label for="username" class="form-label">Username:</label>
@@ -211,7 +215,8 @@
           </form>
         </div>
         <div class="modal-footer" style="border: none;">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
           <button type="submit" form="signup-form" class="btn btn-primary" style="border-radius: 25px;">Sign Up</button>
         </div>
       </div>
@@ -269,176 +274,182 @@
 
 
 
-<!-- Signin Modal -->
-<div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
-          width="163px" height="62px" alt=""> </h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="signin-form">
-          <div class="mb-2">
-            <label for="username" class="form-label">Username or Email:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-          </div>
-          <div class="mb-2">
-            <label for="password" class="form-label">Password:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          </div>
-          <div id="error-message" class="text-danger"></div>
-        </form>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 25px;">Close</button>
-        <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
+  <!-- Signin Modal -->
+  <div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="signin-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="signup-modal-label" style="margin: auto;"> <img src="images/mylogo.png"
+              width="163px" height="62px" alt=""> </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signin-form">
+            <div class="mb-2">
+              <label for="username" class="form-label">Username or Email:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-2">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="text-danger"></div>
+          </form>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="border-radius: 25px;">Close</button>
+          <button type="submit" form="signin-form" class="btn btn-primary" style="border-radius: 25px;">Sign In</button>
 
-      </div>
-
-
-      <div class="modal-footer">
-        <button id="signup-button"  data-bs-dismiss="modal" class="btn btn-primary " style="min-width: 100%;">Register Now</button>
-        <p>By continuing, you agree to <a href=""> Agrizone's </a> Conditions of Use and <a href=""> Privacy Notice</a>.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  $(document).ready(function() {
-  // Show the modal when the Sign In button is clicked
-  $('#signin-button').click(function() {
-    $('#signin-modal').modal('show');
-  });
-  
-  // Handle form submission
-  $('#signin-form').submit(function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-    
-    // Get form data
-    var formData = {
-      'username': $('input[name=username]').val(),
-      'password': $('input[name=password]').val()
-    };
-    
-    // Send POST request to server to sign in
-    $.ajax({
-      type: 'POST',
-      url: '/signin',
-      data: formData,
-      dataType: 'json',
-      encode: true
-    })
-    .done(function(data) {
-      // Handle successful sign in
-      $('#signin-modal').modal('hide');
-      // Do something with response data, e.g. redirect to another page
-    })
-    .fail(function(data) {
-      // Handle sign in error
-      $('#error-message').text('Invalid username or password');
-    });
-  });
-});
-
-</script>
+        </div>
 
 
-
-
-<!-- SELLING MODAL  -->
-
-<div class="modal fade" id="sellProductModal" tabindex="-1" role="dialog" aria-labelledby="sellProductModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="sellProductModalLabel">Sell Product</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="sellProductForm">
-          <div class="form-group">
-            <label for="productName">Product Name</label>
-            <input type="text" class="form-control" id="productName" name="productName" required>
-          </div>
-          <div class="form-group">
-            <label for="productDescription">Product Description</label>
-            <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
-          </div>
-
-          <div class="form-group mt-3" >
-            <label for="productImages">Product Images</label>
-            <input type="file" class="form-control-file" id="productImages" name="productImages[]" accept="image/*" multiple required>
-          </div>
-        </form>
-        <div id="productImagesPreview" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner"></div>
-          <a class="carousel-control-prev" href="#productImagesPreview" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#productImagesPreview" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="modal-footer">
+          <button id="signup-button" data-bs-dismiss="modal" class="btn btn-primary " style="min-width: 100%;">Register
+            Now</button>
+          <p>By continuing, you agree to <a href=""> Agrizone's </a> Conditions of Use and <a href=""> Privacy
+              Notice</a>.</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // Show the modal when the Sign In button is clicked
+      $('#signin-button').click(function () {
+        $('#signin-modal').modal('show');
+      });
+
+      // Handle form submission
+      $('#signin-form').submit(function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Get form data
+        var formData = {
+          'username': $('input[name=username]').val(),
+          'password': $('input[name=password]').val()
+        };
+
+        // Send POST request to server to sign in
+        $.ajax({
+          type: 'POST',
+          url: '/signin',
+          data: formData,
+          dataType: 'json',
+          encode: true
+        })
+          .done(function (data) {
+            // Handle successful sign in
+            $('#signin-modal').modal('hide');
+            // Do something with response data, e.g. redirect to another page
+          })
+          .fail(function (data) {
+            // Handle sign in error
+            $('#error-message').text('Invalid username or password');
+          });
+      });
+    });
+
+  </script>
+
+
+
+
+  <!-- SELLING MODAL  -->
+
+  <div class="modal fade" id="sellProductModal" tabindex="-1" role="dialog" aria-labelledby="sellProductModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sellProductModalLabel">Sell Product</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="sellProductForm">
+            <div class="form-group">
+              <label for="productName">Product Name</label>
+              <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+              <label for="productDescription">Product Description</label>
+              <textarea class="form-control" id="productDescription" name="productDescription" rows="3"
+                required></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="productImages">Product Images</label>
+              <input type="file" class="form-control-file" id="productImages" name="productImages[]" accept="image/*"
+                multiple required>
+            </div>
+          </form>
+          <div id="productImagesPreview" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner"></div>
+            <a class="carousel-control-prev" href="#productImagesPreview" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productImagesPreview" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
 
         </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" form="sellProductForm">Sell</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" form="sellProductForm">Sell</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<script>
-  $(document).ready(function() {
-  // Add validation rules to form
-  $('#sellProductForm').validate({
+  <script>
+    $(document).ready(function () {
+      // Add validation rules to form
+      $('#sellProductForm').validate({
 
-    rules: {
-      productName: 'required',
-      productDescription: 'required',
-      'productImages[]': {
-        required: true,
-        accept: 'image/*'
-      }
-    },
-    messages: {
-      productName: 'Please enter a product name',
-      productDescription: 'Please enter a product description',
-      'productImages[]': {
-        required: 'Please upload at least one image',
-        accept: 'Please upload a valid image file (JPG, PNG, GIF, etc.)'
-      }
-    },
-    errorElement: 'div',
-    errorPlacement: function(error, element) {
-      error.addClass('invalid-feedback');
-      element.closest('.form-group').append(error);
-    },
-    highlight: function(element, errorClass, validClass) {
-      $(element).addClass('is-invalid').removeClass('is-valid');
-    },
-    unhighlight: function(element, errorClass, validClass) {
-      $(element).addClass('is-valid').removeClass('is-invalid');
-    }
-  });
+        rules: {
+          productName: 'required',
+          productDescription: 'required',
+          'productImages[]': {
+            required: true,
+            accept: 'image/*'
+          }
+        },
+        messages: {
+          productName: 'Please enter a product name',
+          productDescription: 'Please enter a product description',
+          'productImages[]': {
+            required: 'Please upload at least one image',
+            accept: 'Please upload a valid image file (JPG, PNG, GIF, etc.)'
+          }
+        },
+        errorElement: 'div',
+        errorPlacement: function (error, element) {
+          error.addClass('invalid-feedback');
+          element.closest('.form-group').append(error);
+        },
+        highlight: function (element, errorClass, validClass) {
+          $(element).addClass('is-invalid').removeClass('is-valid');
+        },
+        unhighlight: function (element, errorClass, validClass) {
+          $(element).addClass('is-valid').removeClass('is-invalid');
+        }
+      });
 
-  // Clear form when modal is hidden
-  $('#sellProductModal').on('hidden.bs.modal', function() {
-    $('#sellProductForm')[0].reset();
-    $('#sellProductForm').validate().resetForm();
-    $('#sellProductForm .form-control').removeClass('is-valid is-invalid');
-  });
-});
+      // Clear form when modal is hidden
+      $('#sellProductModal').on('hidden.bs.modal', function () {
+        $('#sellProductForm')[0].reset();
+        $('#sellProductForm').validate().resetForm();
+        $('#sellProductForm .form-control').removeClass('is-valid is-invalid');
+      });
+    });
 
-</script>
+  </script>
 
 
 
@@ -506,7 +517,7 @@
             </select>
           </div>
           <div>
-            
+
             <p>&nbsp;</p>
           </div>
         </div>
@@ -514,153 +525,561 @@
       </div>
     </div>
   </section>
-        
-        <p>&nbsp;</p>
-        <br>
-<p>&nbsp;</p>
-        <section>
-          <div class="container">
-              <div class="row">
-
-                  <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
-                      <div class="card">
-                          <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
-                          <div class="card-body" style="display: flex;flex-direction: column;">
-  
-                              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
-                                  card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
-                                  vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
-                                  quo inventore. Porro aut atque veritatis. content.</p>
-                              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
-                              <a href="#" class="" style="">1_8, islamabad . days ago</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
-                    <div class="card">
-                        <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body" style="display: flex;flex-direction: column;">
-
-                            <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
-                                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
-                                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
-                                quo inventore. Porro aut atque veritatis. content.</p>
-                            <h5 class="card-title" style="margin-top: auto;">Card title</h5>
-                            <a href="#" class="" style="">1_8, islamabad . days ago</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
-                  <div class="card">
-                      <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body" style="display: flex;flex-direction: column;">
-
-                          <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
-                              card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
-                              vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
-                              quo inventore. Porro aut atque veritatis. content.</p>
-                          <h5 class="card-title" style="margin-top: auto;">Card title</h5>
-                          <a href="#" class="" style="">1_8, islamabad . days ago</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
-                <div class="card">
-                    <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" style="display: flex;flex-direction: column;">
-
-                        <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
-                            card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
-                            vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
-                            quo inventore. Porro aut atque veritatis. content.</p>
-                        <h5 class="card-title" style="margin-top: auto;">Card title</h5>
-                        <a href="#" class="" style="">1_8, islamabad . days ago</a>
-                    </div>
-                </div>
-            </div>
-
-              </div>
-          </div>
-      </section>
-  
 
 
-<p>&nbsp;</p>
+  <section class="">
+    <div class="col-lg-12">
+        <center class="wrapper" style="margin-top: 4rem;">
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;" onclick="location.href='#fruits'">Fruits</button> 
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;" onclick="location.href='#veg'">Vegetables</button>
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;"onclick="location.href='#crops'">Crops</button>
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;" onclick="location.href='#seeds'">Seeds</button>
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;" onclick="location.href='#fert'">Fertilizers</button>
+          <button type="button" class="btn btn-success catg-btn-edit "
+            style="display: inline-block;" id="#Pesticides" onclick="location.href='#pest'">Pesticides</button>
+        </center>
+      </div>
+  </section>
 
 
-      <footer>
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                  <h5 class="pt-3">Papular Crops</h5>
-                  <ul class="cropes-section-edit">
-                    <li>Nutes</li>
-                    <li>Lugemes</li>
-                    <li>Oil Seeds</li>
-                    <li>Fiber Crops</li>
-                    <li>Tubers & Roots</li>
-                    <li>Spices & Herbs</li>
-                    <li>Forage & Fooders </li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                  <h5 class="pt-3">Modern Equips</h5>
-                  <ul class="cropes-section-edit">
-                    <li>Tractors</li>
-                    <li>Combines</li>
-                    <li>Seed Drills</li>
-                    <li>Plows</li>
-                    <li>Cultivators</li>
-                    <li>Mowers</li>
-                    <li>Grain Dryers</li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                  <h5 class="pt-3">Trending Searches</h5>
-                  <ul class="cropes-section-edit">
-                    <li>Crop Yield Optimization</li>
-                    <li>Agri Farming News</li>
-                    <li>Animal Husbandry</li>
-                    <li>Livestock Farming</li>
-                    <li>Teach & Innovation</li>
-                  </ul>
-                </div>
-              
-            
-         
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                  <h5 class="pt-3">About Us</h5>
-                  <ul class="cropes-section-edit">
-                    <li>Our Team</li>
-                    <li>Experts</li>
-                    <li>Need Help</li>
-                    <li>Contect Ous</li>
-                    <li>For business</li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                  <h5 class="pt-3">FOLLOW US</h5>
-                  <ul class="cropes-section-edit" id="follow-section-edit">
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li> <i class="fa-brands fa-youtube"></i></li>
-                    <li><i class="fa-brands fa-google-plus"></i></li>
-                  </ul>
-                  <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
-                </div>
-                <hr>
-                <div >
-                  <p style="text-align: center;">@2023 Copyright: AGRIZONE.COM</p>
-                </div>
-    
-              </div>
-            
+
+  <div class="container">
+
+    <div style="text-align: center;" class="title-heading py-5">
+      <h5>Best Service</h5>
+      <h3 style="margin: 0 !important;">Services we provided</h3>
+      <div class="brd-style">
+        <div class="bline"></div>
+        <div class="cir"></div>
+        <div class="bline"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="mt-5" id="fruits">
+    <div class="container">
+      <div class="row">
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Fresh Fruits</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
           </div>
         </div>
-      </footer>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
 
-  </body>
-  </html>
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
-  
+  <!-- Vegetables -->
+  <section class="mt-5" id="veg">
+    <div class="container">
+      <div class="row" >
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Vegetables</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Crops -->
+  <section class="mt-5" id="crops">
+    <div class="container">
+      <div class="row">
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Crops</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seeds  -->
+  <section class="mt-5" id="seeds">
+    <div class="container">
+      <div class="row">
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Seeds</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fertilizers -->
+  <section class="mt-5" id="fert">
+    <div class="container">
+      <div class="row">
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Fertilizers</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pesticides -->
+    <section class="mt-5" id="pest">
+    <div class="container">
+      <div class="row">
+        <div style="text-align: left;" class="title-heading ms-3  ">
+          <!-- <h6>Best Service</h6> -->
+          <h3 style="margin: 0 !important;">Pesticides</h3>
+          <div class="brd-style">
+            <div class="cir"></div>
+            <div class="bline"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" style="object-fit:cover;" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  px-2 py-2 d-flex">
+          <div class="card">
+            <img src="Images/Bg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex;flex-direction: column;">
+
+              <p class="card-text" style="overflow: hidden;text-overflow: ellipsis; height: 50px; "> the bulk of the
+                card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et libero
+                vitae unde minus veritatis, eaque quas molestiae, saepe veniam adipisci voluptatem hic
+                quo inventore. Porro aut atque veritatis. content.</p>
+              <h5 class="card-title" style="margin-top: auto;">Card title</h5>
+              <a href="#" class="" style="">1_8, islamabad . days ago</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <p>&nbsp;</p>
+
+
+  <footer>
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <h5 class="pt-3">Papular Crops</h5>
+          <ul class="cropes-section-edit">
+            <li>Nutes</li>
+            <li>Lugemes</li>
+            <li>Oil Seeds</li>
+            <li>Fiber Crops</li>
+            <li>Tubers & Roots</li>
+            <li>Spices & Herbs</li>
+            <li>Forage & Fooders </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <h5 class="pt-3">Modern Equips</h5>
+          <ul class="cropes-section-edit">
+            <li>Tractors</li>
+            <li>Combines</li>
+            <li>Seed Drills</li>
+            <li>Plows</li>
+            <li>Cultivators</li>
+            <li>Mowers</li>
+            <li>Grain Dryers</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <h5 class="pt-3">Trending Searches</h5>
+          <ul class="cropes-section-edit">
+            <li>Crop Yield Optimization</li>
+            <li>Agri Farming News</li>
+            <li>Animal Husbandry</li>
+            <li>Livestock Farming</li>
+            <li>Teach & Innovation</li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <h5 class="pt-3">About Us</h5>
+          <ul class="cropes-section-edit">
+            <li>Our Team</li>
+            <li>Experts</li>
+            <li>Need Help</li>
+            <li>Contect Ous</li>
+            <li>For business</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <h5 class="pt-3">FOLLOW US</h5>
+          <ul class="cropes-section-edit" id="follow-section-edit">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li> <i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-brands fa-google-plus"></i></li>
+          </ul>
+          <img src="Images/mylogo.png" width="120" height="50" id="follow-section-img" alt="">
+        </div>
+        <hr>
+        <div>
+          <p style="text-align: center;">@2023 Copyright: AGRIZONE.COM</p>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
