@@ -198,7 +198,7 @@ select {
 }
 
 #service-heading {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Poppins', sans-serif; */
   font-weight: 600;
@@ -468,8 +468,10 @@ footer {
   position: relative;
   z-index: 1;
   transition: 0.2s ease;
-  background: #303032;
+  /* background: #303032; */
   /* background-color: #60941a; */
+  background: rgb(62, 81, 52);
+  background: linear-gradient(332deg, rgb(44 81 25) 32%, rgb(86 153 9) 67%);
   color: #fff;
 }
 
@@ -505,6 +507,30 @@ footer {
 .brd-style {
   display: inline-flex;
   transform: translateY(-3px);
+}
+
+.my-cont i {
+  font-size: 50px;
+  padding: 20px;
+  /* color: #909090; */
+  color: #46594d;
+
+}
+
+.my-cont h4 {
+  padding: 15px;
+}
+
+.my-cont p {
+  /* padding: 20px; */
+}
+
+.my-cont2 input {
+  border: none;
+}
+
+.my-cont2 textarea {
+  border: none;
 }
 
 /* .navbar-collapse{
